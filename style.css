@@ -101,26 +101,12 @@ main {
 }
 
 /* Match Details */
-.timing {
-    display: flex;
-    color: rgba(22, 22, 22, 0.7);
-}
-
-.clock {
-
-    margin-left: 10px;
-    padding-right: 50px;
-}
-
 .container1 {
-    /* background-color: gray; */
-    /* height: 100vh;
-    width: 100%; */
     padding: 15px;
     display: grid;
     gap: 10px;
     grid-template-columns: 200px repeat(3, 1fr);
-
+    /* background-color: gray; */
     /* grid-template-rows: 2fr 1fr 2fr 3fr; */
 }
 
@@ -149,6 +135,17 @@ main {
     grid-column: 4 / 5;
 }
 
+.timing {
+    display: flex;
+    color: rgba(22, 22, 22, 0.7);
+}
+
+.clock {
+
+    margin-left: 10px;
+    padding-right: 50px;
+}
+
 /* Footer Part */
 .footer {
     background-color: #161616;
@@ -175,4 +172,40 @@ main {
 hr {
     border: 1px solid #f5eeee;
     margin-bottom: 30px;
+}
+
+/* Responsive for tab */
+@media screen and (max-width:992px) {
+    .banner-container {
+        width: 820px;
+    }
+
+    .banner-btn {
+        padding: 15px 30px;
+        background-color: rgb(202, 29, 29);
+        margin-top: 1px;
+        font-size: 18px;
+        color: white;
+        border-radius: 5px;
+        width: 180px;
+        height: 50px;
+    }
+
+    .container1 {
+        padding: 15px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 100px repeat(2, 1fr);
+    }
+
+    .container1>.sidebar {
+        grid-column: 1 / -1;
+        margin-top: 5px;
+    }
+
+    .btn-bgc {
+        display: none;
+    }
+
+
 }
